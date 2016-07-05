@@ -9,6 +9,6 @@ sudo unzip CloudWatchMonitoringScripts-1.2.1.zip
 sudo rm CloudWatchMonitoringScripts-1.2.1.zip
 cd /opt/aws-scripts-mon
 sudo crontab - l >> mycron
-sudo echo "*/5 * * * * ~/aws-scripts-mon/mon-put-instance-data.pl --mem-util --from-cron" >> mycron
+sudo echo "*/5 * * * * /opt/aws-scripts-mon/mon-put-instance-data.pl --mem-util --from-cron" >> mycron
 sudo crontab mycron
 sudo rm mycron
