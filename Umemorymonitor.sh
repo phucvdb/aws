@@ -1,7 +1,7 @@
 #!/bin/bash
-sudo apt-get update
-sudo apt-get install unzip
-sudo apt-get install libwww-perl libdatetime-perl
+sudo apt-get update -y
+sudo apt-get install unzip -y
+sudo apt-get install libwww-perl libdatetime-perl -y
 curl http://aws-cloudwatch.s3.amazonaws.com/downloads/CloudWatchMonitoringScripts-1.2.1.zip -O
 sudo mv CloudWatchMonitoringScripts-1.2.1.zip /opt/
 cd /opt
